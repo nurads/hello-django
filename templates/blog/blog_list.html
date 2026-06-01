@@ -1,0 +1,15 @@
+<html>
+
+
+<body>
+    <h1>Blog List</h1>
+    <p>This is the list of blogs.</p>
+
+    {% for blog in blogs %}
+        <div>
+            <h2>{{ blog.title }}</h2>
+            <p>{{ blog.content }}</p>
+        </div>
+    {% endfor %}
+
+</html>
